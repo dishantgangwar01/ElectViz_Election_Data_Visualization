@@ -1,8 +1,5 @@
 # ElectViz: Indian General Election Analysis Dashboard (2009-2024)
 
-![ElectViz Dashboard Screenshot](https://i.imgur.com/YOUR_SCREENSHOT_URL.png) 
-*(**Note:** You'll need to upload a screenshot of your dashboard to a host like Imgur and replace the URL above)*
-
 ---
 
 ### **Table of Contents**
