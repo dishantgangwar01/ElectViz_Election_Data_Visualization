@@ -49,9 +49,9 @@ This tool is designed for political analysts, journalists, researchers, and stud
 
 ### **Data Model**
 
-The project uses a simple, single-table model for speed and simplicity in this specific context. All visuals are powered by the consolidated `Election_Data` table, which is the output of the Power Query append process.
+The project uses a simple, single-table model for speed and simplicity in this specific context. All visuals are powered by the consolidated `Election_Fact` table, which is the output of the Power Query append process.
 
-**`Election_Data` (Fact Table)**
+**`Election_Fact` (Fact Table)**
 * Year
 * State
 * Constituency
@@ -75,3 +75,15 @@ To use this report:
     * Click on any chart element (like a state on the map or a bar in a chart) to cross-filter the entire page.
     * Navigate between the pages (tabs at the bottom) to explore different levels of detail.
 ### **Project Structure**
+ElectViz_Project/ │ ├── Data/ │ ├── India_PC_2009.csv │ ├── India_PC_2014.csv │ ├── India_PC_2019.csv │ └── India_PC_2024.csv │ ├── PowerBI_Project/ │ └── ElectViz.pbix │ └── README.md
+
+### **Future Enhancements**
+
+* **Star Schema:** Refactor the single-table model into a proper star schema (with `dimParty`, `dimState`, `dimDate` dimensions) for improved performance and scalability.
+* **Historical Expansion:** Integrate pre-2009 election data, which would require a complex mapping to account for the 2008 constituency delimitation.
+* **Demographic Overlay:** Blend in census data to correlate voting patterns with constituency demographics (e.g., literacy, urban/rural).
+
+### **Author**
+
+* **Dishant Gangwar**
+*  MIT License
